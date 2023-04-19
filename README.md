@@ -26,13 +26,35 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Explain the differences between `.map`, `.reduce` and `.filter` and describe a use case for each. 
 
+.map(): Can transform arrays by creating a new array. Which also happens to be there use case. Transforming an array of numbers into their squares.
+
+.reduce()- Used to reduce an array to a single value. It applies a callback function to each element of an arrayto make it a single value. But its case use is calculating the sum of all elements in the array.
+
+.filter()- Case use for filtering out elements of an array that dont meet a condition, creating a new array with the same elements that work with the conditions. Filters out the odd numbers from an array of integers.
+
 2. Explain the difference between a callback and a higher order function.
+
+callback functions - Pass an aargument to another function and invoke inside that function.
+
+higher-oreder function - Takes more than one function as arguments or returnsas its result. They can use higher-order functions to implement complex behavior.
 
 3. Explain what a closure is.
 
+Has access to variable outside the function scope even if the outer has been returned. The inner function has access to the outer functions variable and parameters, since it's defined imside the out function. The closure allow private variables in javeScript.
+
 4. Describe the four principles of the 'this' keyword.
 
+global/window binding - When used in a global scope  the this keyword refers to the window object also known as global binding.
+
+implicit binding - When used in a method of an object it refers to the methodand we call this implicit binding.
+
+explicit binding - When bound to a certain object using .call .apply or.bind methods its known as implicit binding
+
+new binging - When used in a constructor function it refers to a new instance of the object being created.
+
 5. Why do we need super() in an extended class?
+
+Its Used to call a child class constructor function from within a sub-class, inherits all properties from the parent class as well as the methods. Super is also used to access parent class constructors and properties. Very important to use when sub-classing needs initalized with the same properties as a parent
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
